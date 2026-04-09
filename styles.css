@@ -1,0 +1,80 @@
+body {
+    background: linear-gradient(280deg, #000000, #1e57f1);
+}
+
+.navbar {
+    background: linear-gradient(120deg, #000000, #1e57f1);
+    border-radius: 0 0 25px 25px;
+    box-shadow: 5px 5px 5px #000;
+}
+
+.navbar a {
+    color: #fff;
+    margin-left: 50px;
+}
+
+.navbar button {
+    margin-right: 50px;
+}
+
+.seccion-productos {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 320px 320px 320px;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.card {
+    box-shadow: 5px 5px 5px #000;
+    margin: 20px;
+}
+
+.seccion-carrito {
+    background-color: #fff;
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 10px;
+    padding: 50px;
+    margin: 50px;
+}
+
+.seccion-total {
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.seccion-total button {
+    background-color: darkgray;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 2px 2px 2px #000;
+    color: #000;
+    font-weight: bolder;
+    padding: 8px;
+    margin: 10px;
+}
+
+@keyframes neonGlow {
+    0%, 100% {
+        text-shadow: 
+            0 0 6px #0ff, 
+            0 0 12px #0ff;
+    }
+    50% {
+        text-shadow: 
+            0 0 10px #0ff, 
+            0 0 20px #0ff;
+    }
+}
+
+.neon-logo {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: 
+        0 0 6px #0ff;
+    animation: neonGlow 2s infinite alternate;
+}
