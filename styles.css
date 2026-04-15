@@ -28,6 +28,19 @@ body {
 .card {
     box-shadow: 5px 5px 5px #000;
     margin: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.card-text {
+    flex-grow: 1;
 }
 
 .seccion-carrito {
@@ -77,4 +90,37 @@ body {
     text-shadow: 
         0 0 6px #0ff;
     animation: neonGlow 2s infinite alternate;
+}
+
+.productos-carrito {
+    background-color: rgb(228, 233, 233);
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 8px;
+}
+
+.productos-carrito button {
+    box-shadow: 5px 5px 5px #000;
+    border-radius: 8px;
+    border: 1px solid #fa0000;
+    font-weight: 600;
+    background-color: #fff;
+}
+
+.productos-carrito button:hover {
+    background-color: #ff0000;
+}
+
+.precio {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 600;
+    margin: 10px;
+    color: #0066ff;
 }

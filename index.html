@@ -17,7 +17,7 @@
                 <div class="d-flex ms-auto order-lg-last">
                     <button class="btn bg-white position-relative">
                         🛒
-                        <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                        <span id="badge" class=" position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
                         0
                         </span>
                     </button>
@@ -30,49 +30,54 @@
         <div class="card" style="width: 18rem;">
             <img src="img/audifonos.png" class="card-img-top" alt="">
             <div class="card-body">
-                <h5 class="card-title">Producto 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <span>$precio</span>
-                <button class="btn btn-primary">Agregar al carrito</button>
+                <h5 class="card-title">Audifonos</h5>
+                <p class="card-text">Experimenta una claridad de audio excepcional con tecnología de cancelación de ruido activa</p>
+                <span class="precio">Precio: $300.000</span>
+                <button class="btn btn-primary btn-agregar" data-nombre="Audifonos" data-precio="300000" >Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/smartwatch.png" class="card-img-top" alt="">
             <div class="card-body">
-                <h5 class="card-title">Producto 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <span>$precio</span>
-                <button class="btn btn-primary">Agregar al carrito</button>
+                <h5 class="card-title">Smartwatch</h5>
+                <p class="card-text">Monitorea tu ritmo cardíaco, pasos y calidad de sueño en tiempo real</p>
+                <span class="precio">Precio: $260.000</span>
+                <button class="btn btn-primary btn-agregar" data-nombre="Smartwatch" data-precio="260000">Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/pc.png" class="card-img-top" alt="">
             <div class="card-body">
-                <h5 class="card-title">Producto 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <span>$precio</span>
-                <button class="btn btn-primary">Agregar al carrito</button>
+                <h5 class="card-title">PC Lenovo</h5>
+                <p class="card-text">Una computadora diseñada para el rendimiento extremo</p>
+                <span class="precio">Precio: $3.400.000 </span>
+                <button class="btn btn-primary btn-agregar" data-nombre="PC Lenovo" data-precio="3400000">Agregar al carrito</button>
             </div>
         </div>
         <div class="card" style="width: 18rem;">
             <img src="img/smartphone.png" class="card-img-top" alt="">
             <div class="card-body">
-                <h5 class="card-title">Producto 1</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-                <span>$precio</span>
-                <button class="btn btn-primary">Agregar al carrito</button>
+                <h5 class="card-title">Smartphone</h5>
+                <p class="card-text">Equipado con una pantalla de última generación y un sistema de cámaras profesional para capturar cada momento</p>
+                <span class="precio">Precio:
+                    <span>$1.800.000</span>
+                </span>
+                <button class="btn btn-primary btn-agregar" data-nombre="Smartphone" data-precio="1800000">Agregar al carrito</button>
             </div>
         </div>
         
     </section>
 
     <section class="seccion-carrito">
-        <div></div>
+        <h5>Carrito</h5>
+        <ul id="lista-carrito">
+            <span hidden>El carrito esta vacio</span>
+        </ul>
     </section>
 
     <section class="seccion-total">
-        <label>Total: $<span id=""></span> </label>
-        <button>Limpiar carrito</button>
+        <label>Total: $<span id="total">0</span> </label>
+        <button id="btn-vaciar">Limpiar carrito</button>
     </section>
 
     <footer></footer>
